@@ -1,0 +1,19 @@
+---
+import { site } from './config';
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="mt-auto border-t border-slate-800 py-8">
+  <div class="mx-auto max-w-4xl px-6 text-center">
+    <p class="text-sm text-slate-500">
+      &copy; {currentYear} {site.title}. Built with
+      <a href="https://astro.build" target="_blank" rel="noopener" class="text-teal-400 hover:text-teal-300">
+        Astro
+      </a>
+      {' '}&{' '}
+      <a href="https://tailwindcss.com" target="_blank" rel="noopener" class="text-teal-400 hover:text-teal-300">
+        Tailwind
+      </a>
+    </p>
+  </div>
+</footer>
