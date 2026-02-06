@@ -15,6 +15,11 @@
 	--selection-color: #adadacc3;
 
 	--swup-fade-theme-duration: 0.15s;
+
+	/* System fonts - no external dependencies */
+	--font-serif: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+	--font-mono: "Consolas", "Monaco", "Courier New", monospace;
+	--font-cursive: cursive;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,15 +50,6 @@
 	--block-color: #1e1e1e;
 	--shadow-color: #323231;
 	--selection-color: #adadacc3;
-}
-
-/* Language-specific fonts */
-:lang(zh-cn) {
-	--font-serif: var(--font-noto-serif-sc);
-}
-
-:lang(ja) {
-	--font-serif: var(--font-noto-serif-jp);
 }
 
 [data-theme="dark"] .astro-code,
@@ -98,7 +94,7 @@
 
 	body {
 		font-size: 1.0625rem;
-		font-family: var(--font-serif), var(--font-mono);
+		font-family: var(--font-serif);
 		color: var(--primary-color);
 		background-color: var(--background-color);
 		overflow-x: clip;
@@ -231,9 +227,9 @@
 	--color-shadow: var(--shadow-color);
 	--color-selection: var(--selection-color);
 
-	--font-serif: var(--font-noto-serif);
-	--font-mono: var(--font-maple-mono-nf-cn);
-	--font-cursive: var(--font-playwrite-mx), var(--font-the-peak-font-plus);
+	--font-serif: var(--font-serif);
+	--font-mono: var(--font-mono);
+	--font-cursive: var(--font-cursive);
 
 	@keyframes shaky {
 		0% {
