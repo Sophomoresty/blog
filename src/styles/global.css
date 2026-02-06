@@ -1,3 +1,7 @@
+/* Load fonts from reliable CDN (jsDelivr - powered by Cloudflare) */
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc@5.1.1/index.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.1.1/index.min.css");
+
 @import "tailwindcss";
 
 @plugin "@iconify/tailwind4" {
@@ -16,9 +20,9 @@
 
 	--swup-fade-theme-duration: 0.15s;
 
-	/* System fonts - no external dependencies */
-	--font-serif: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
-	--font-mono: "Consolas", "Monaco", "Courier New", monospace;
+	/* Font stack with CDN fonts as primary, system fonts as fallback */
+	--font-serif: "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", "Fira Code", "Consolas", "Monaco", monospace;
 	--font-cursive: cursive;
 }
 
