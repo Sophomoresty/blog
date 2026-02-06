@@ -57,7 +57,11 @@ const preface = defineCollection({
  */
 const information = defineCollection({
 	// Load both markdown and YAML files for mixed content types
-	loader: glob({ pattern: "**/*.{md,mdx,yaml}", base: "./src/content/information" })
+	loader: glob({ pattern: "**/*.{md,mdx,yaml}", base: "./src/content/information" }),
+	schema: z.object({
+		title: z.string().optional(),
+		timestamp: z.date().optional()
+	})
 });
 
 export const collections = { note, jotting, preface, information };
