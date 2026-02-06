@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.36.0](https://github.com/Sophomoresty/blog/compare/v0.35.7...v0.36.0) (2026-02-06)
+
+
+### Features
+
+* add GitHub Pages deployment workflow ([db4b93d](https://github.com/Sophomoresty/blog/commit/db4b93d17f0ab7adee3294bd9025d0efca5c09d6))
+* deploy ThoughtLite theme ([6a8c73e](https://github.com/Sophomoresty/blog/commit/6a8c73ebae2e344445b8b547990c97d733206595))
+* initial blog with Astro and Tailwind CSS ([1d004aa](https://github.com/Sophomoresty/blog/commit/1d004aa62f808a9532475353ed1364001973fcc8))
+* update blog configuration and disable remote fonts ([73860d7](https://github.com/Sophomoresty/blog/commit/73860d7dc201e1678c94e1dde3f2a3b3f14203a0))
+
 ## [0.35.7](https://github.com/tuyuritio/astro-theme-thought-lite/compare/v0.35.6...v0.35.7) (2026-02-03)
 
 
